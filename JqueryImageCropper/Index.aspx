@@ -9,7 +9,23 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+        <table>
+            <tr>
+                <td>Select Image:</td>
+                <td>
+                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                </td>
+                <td>
+                    <asp:Button ID="btnUpload" runat="server" Text="Red" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <asp:Label ID="lblMsg" runat="server" ForeColor="Red"></asp:Label>
+                </td>
+            </tr>
+        </table>
+        <asp:Panel ID="Panel1" runat="server"></asp:Panel>
     </div>
     </form>
 </body>
